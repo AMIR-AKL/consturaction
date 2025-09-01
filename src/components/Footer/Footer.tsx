@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { BsFacebook, BsWhatsapp, BsYoutube } from "react-icons/bs";
 import { IoMailOutline } from "react-icons/io5";
 import { LuMapPin } from "react-icons/lu";
 import {
