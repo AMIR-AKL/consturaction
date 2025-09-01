@@ -1,0 +1,233 @@
+@import "tailwindcss";
+@utility container {
+	margin: 0 auto;
+	padding-inline: 2rem;
+}
+@theme {
+	--font-dana-black: "dana black";
+	--font-dana-bold: "dana bold";
+	--font-dana-medium: "dana medium";
+	--font-dana-regular: "dana regular";
+	--font-morabba-black: "morabba black";
+	--font-morabba-black: "morabba medium";
+	--font-morabba-bold: "morabba bold";
+	--font-morabba-regular: "morabba regular";
+	--font-rossalyta-italic: "rossalyta italic";
+	--font-staatliches-regular: "Staatliches";
+	--color-secondary: #04204f;
+	--breakpoint-xs: 28rem;
+	--animate-dot1: dotPulse 1.5s ease-in-out infinite;
+	--animate-dot2: dotPulse 1.5s ease-in-out infinite 0.3s;
+	--animate-dot3: dotPulse 1.5s ease-in-out infinite 0.6s;
+	@keyframes dotPulse {
+		0%,
+		80%,
+		100% {
+			opacity: 0;
+		}
+		40% {
+			opacity: 1;
+		}
+	}
+}
+
+/* start init fonts */
+
+/* Anjoman fonts */
+@font-face {
+	font-family: "dana black";
+	src: url("../../public/fonts/dana/dana-black.ttf");
+}
+@font-face {
+	font-family: "dana bold";
+	src: url("../../public/fonts/dana/dana-bold.ttf");
+}
+@font-face {
+	font-family: "dana medium";
+	src: url("../../public/fonts/dana/dana-medium.ttf");
+}
+@font-face {
+	font-family: "dana regular";
+	src: url("../../public/fonts/dana/dana-regular.ttf");
+}
+
+/* Ayandeh fonts */
+
+@font-face {
+	font-family: "morabba black";
+	src: url("../../public/fonts/morabba/Morabba-Black.ttf");
+}
+@font-face {
+	font-family: "morabba bold";
+	src: url("../../public/fonts/morabba/Morabba-Bold.ttf");
+}
+@font-face {
+	font-family: "morabba medium";
+	src: url("../../public/fonts/morabba/Morabba-Medium.ttf");
+}
+@font-face {
+	font-family: "morabba regular";
+	src: url("../../public/fonts/morabba/Morabba-Regular.ttf");
+}
+
+/* rossalyta fonts */
+
+@font-face {
+	font-family: "rossalyta italic";
+	src: url("../../public/fonts/rossalyta/Rossalyta\ Nataly\ Italic.ttf");
+}
+@font-face {
+	font-family: "Staatliches";
+	src: url("../../public/fonts/Staatliches-Regular.ttf");
+}
+/* start custom styling */
+
+.bg-home {
+	background-image: url("../../public/image/Home.webp");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	/* height: 700px; */
+}
+
+.bg-services {
+	background-image: url("../../public/image/services.webp");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 700px;
+}
+.bg-projects {
+	background-image: url("../../public/image/Projects.webp");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 700px;
+}
+.bg-blog {
+	background-image: url("../../public/image/Blog1.webp");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 700px;
+}
+.bg-gallery {
+	background-image: url("../../public/image/Gallery.png");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 700px;
+}
+.bg-about {
+	background-image: url("../../public/image/Hero-about.webp");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 700px;
+}
+.bg-contact {
+	background-image: url("../../public/image/About-us.webp");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 700px;
+}
+.bg-state {
+	background-image: url("../../public/image/state-bg.webp");
+}
+.bg-team {
+	background-image: url("../../public/image/team-bg.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg-footer {
+	background-image: url("../../public/image/bg.webp");
+}
+
+.video-container::after {
+	position: absolute;
+	content: "";
+	width: 170px;
+	height: 120%;
+	border-radius: 12px;
+	background-color: #ffd230;
+	top: 45%;
+	right: 50%;
+	z-index: -1;
+	transform: translate(50%, -50%) skew(12deg, -10deg);
+	-webkit-transform: translate(50%, -50%) skew(12deg, -10deg);
+	-moz-transform: translate(50%, -50%) skew(12deg, -10deg);
+	-ms-transform: translate(50%, -50%) skew(12deg, -10deg);
+	-o-transform: translate(50%, -50%) skew(12deg, -10deg);
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+}
+
+.services-img::after {
+	position: absolute;
+	content: "";
+	background-color: #ececec;
+	height: 100%;
+	width: 70%;
+	right: 15%;
+	top: 0;
+	z-index: 0;
+	transform: skew(15deg);
+	-webkit-transform: skew(15deg);
+	-moz-transform: skew(15deg);
+	-ms-transform: skew(15deg);
+	-o-transform: skew(15deg);
+}
+.swiper-button-prev {
+	background-color: white;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	width: 40px !important;
+	height: 40px !important;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+}
+.swiper-button-prev::after {
+	font-size: 15px !important;
+	color: black !important;
+}
+.swiper-button-next {
+	background-color: white;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	width: 40px !important;
+	height: 40px !important;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+}
+.swiper-button-next::after {
+	font-size: 15px !important;
+	color: black !important;
+}
+
+.team::after {
+	position: absolute;
+	content: "";
+	background-color: #ffd230;
+	top: 50%;
+	right: 50%;
+	width: 100px;
+	height: 100%;
+	transform: translate(50%, -50%) skew(5deg);
+}
+.main-title-footer::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	background: #f3f3f3;
+	/* width: 55%; */
+	height: 0.8px;
+	z-index: 100;
+}
