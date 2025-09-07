@@ -1,6 +1,5 @@
 import React, { ReactElement } from "react";
 import Btn from "../Btn/Btn";
-import ItemBox from "../ItemBox/ItemBox";
 
 export default function Landing(props: {
 	texten: string;
@@ -28,7 +27,7 @@ export default function Landing(props: {
 					{props.textfas}
 				</h2>
 				{props.des && (
-					<p className="max-sm:text-sm text-xl font-dana-medium">
+					<p className="max-sm:text-sm w-full font-dana-medium">
 						شرکت ما یک شرکت ساختمان سازی برجسته در ایران است که در زمینه طراحی و
 						ساخت ساختمان های مدرن و کیفیت بالا فعالیت می کند. ما به عنوان یک تیم
 						متشکل از مهندسان و متخصصان با تجربه، به ارائه خدمات حرفه ای و
