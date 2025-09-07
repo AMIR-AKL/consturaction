@@ -14,7 +14,7 @@ export default function Navlink() {
 				{links.map((link) => (
 					<li
 						key={link.id}
-						className={`relative flex items-center text-base tracking-tight text-white font-dana-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:bg-gray-400 before:scale-x-0 hover:before:scale-x-100 hover:before:bg-amber-300 before:ease-in-out before:duration-500 hover:before:origin-right before:origin-left before:transition-transform group pointer-events-auto ${
+						className={`relative flex items-center text-base tracking-tight text-white font-dana-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:bg-gray-500/60 before:scale-x-0 hover:before:scale-x-100 hover:before:bg-amber-300 before:ease-in-out before:duration-500 hover:before:origin-right before:origin-left before:transition-transform group pointer-events-auto ${
 							pathName == link.href ? "before:scale-x-100" : ""
 						}`}
 					>
