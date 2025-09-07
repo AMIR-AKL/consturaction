@@ -8,6 +8,39 @@ import Services from "@/components/Services/Services";
 import Awards from "@/components/Awards/Awards";
 import Team from "@/components/Team/Team";
 import News from "@/components/News/News";
+// services data
+const data = [
+	{
+		id: 1,
+		title: "ساخت آپارتمان",
+		text: "ما با استفاده از تکنولوژی های نوین و به روز، به طور مداوم در جستجوی روش های بهبود یافته است.",
+		src: "https://a.meharat.com/constructionco-ml/wp-content/uploads/2023/08/iconscout-19.svg",
+	},
+	{
+		id: 2,
+		title: "ساخت ویلا",
+		text: "ما با استفاده از تکنولوژی های نوین و به روز، به طور مداوم در جستجوی روش های بهبود یافته است.",
+		src: "https://a.meharat.com/constructionco-ml/wp-content/uploads/2023/08/Vector-1.svg",
+	},
+	{
+		id: 3,
+		title: "بازسازی ساختمان",
+		text: "ما با استفاده از تکنولوژی های نوین و به روز، به طور مداوم در جستجوی روش های بهبود یافته است.",
+		src: "https://a.meharat.com/constructionco-ml/wp-content/uploads/2023/08/iconscout-8804622.svg",
+	},
+	{
+		id: 4,
+		title: "دکوراسیون داخلی",
+		text: "ما با استفاده از تکنولوژی های نوین و به روز، به طور مداوم در جستجوی روش های بهبود یافته است.",
+		src: "https://a.meharat.com/constructionco-ml/wp-content/uploads/2023/08/iconscout-3418222.svg",
+	},
+	{
+		id: 5,
+		title: "ساخت آپارتمان",
+		text: "ما با استفاده از تکنولوژی های نوین و به روز، به طور مداوم در جستجوی روش های بهبود یافته است.",
+		src: "https://a.meharat.com/constructionco-ml/wp-content/uploads/2023/08/iconscout-19.svg",
+	},
+];
 export default function Home() {
 	return (
 		<>
@@ -84,7 +117,7 @@ export default function Home() {
 			{/*end section location */}
 
 			{/* start section services */}
-			<Services />
+			<Services linkItem data={data} />
 			{/* end section services */}
 
 			{/* start section Awards*/}
