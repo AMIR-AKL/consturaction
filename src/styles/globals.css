@@ -97,6 +97,13 @@
 	background-attachment: fixed;
 	height: 700px;
 }
+.bg-services2 {
+	background-image: url("../../public/image/bg-1.webp");
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 600px;
+}
 .bg-projects {
 	background-image: url("../../public/image/Projects.webp");
 	background-position: center center;
@@ -230,4 +237,13 @@
 	/* width: 55%; */
 	height: 0.8px;
 	z-index: 100;
+}
+.services::after {
+	position: absolute;
+	content: "";
+	background-color: #ffd230;
+	bottom: -5%;
+	left: 10%;
+	width: 270px;
+	transform: skew(10deg, -5deg);
 }
